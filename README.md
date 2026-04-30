@@ -7,7 +7,7 @@ This repository showcases a complete product analytics framework for B2B SaaS co
 - data-taxonomy.md - Defines event categories, naming conventions, and user identifiers.
 - event-tracking-plan.md - Details each tracked event, associated properties, and use cases.
 - integration-architecture.md - Illustrates data flow from client instrumentation to warehouse.
-- segmentation-logic.md - Illustrates data flow from client instrumentation to warehouse.
+- segmentation-logic.md - Defines SQL queries and PostHog rules for user cohorts and segmentation.
 - data-governance.md - Explains data retention, privacy, and validation standards.
 - sample_users.csv - Synthetic user profile dataset.
 - sample_events.csv - Simulated event log with timestamps and properties.

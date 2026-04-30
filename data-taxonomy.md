@@ -10,7 +10,7 @@
 
 ## Entities
 
-### User
+### User (Identify Traits)
 - user_id (string, hashed) — Unique user identifier. (required)
 - created_at (timestamp, ISO8601 UTC) — User signup time.
 - email_hash (string) — SHA256 hashed email (no raw email).
@@ -19,10 +19,13 @@
 - plan (string) — e.g., trial, free, pro, enterprise.
 - country (string) — ISO 3166-1 alpha-2 (e.g., ID, SG, US).
 - signup_source (string) — web, partner, referral.
+- utm_source (string) — Marketing campaign source (e.g., google, newsletter).
+- utm_medium (string) — Marketing medium (e.g., cpc, email).
+- utm_campaign (string) — Specific marketing campaign name.
 - is_admin (boolean) — indicates admin user.
 - last_seen_at (timestamp) — last event timestamp.
 
-### Events
+### Events (Track Properties)
 - event_id (string) — unique event id (uuid).
 - event (string) — event name (see Event list).
 - user_id (string) — hashed user id.

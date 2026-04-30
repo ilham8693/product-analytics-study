@@ -4,6 +4,7 @@
 - Track events from client side with server-side using Segment HTTP API.
 - Each event must include: user_id (hashed), timestamp (ISO8601 UTC), event name, properties JSON, context, session_id.
 - Use stable property names (snake_case) and avoid nested fields unless necessary.
+- **Data Quality:** Use JSON Schema validation on ingestion to drop malformed events before they reach the warehouse, and run `dbt tests` on downstream models ensures required fields (like `amount`) meet constraints.
 
 ## Example event definitions
 

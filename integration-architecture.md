@@ -15,3 +15,4 @@
 ## Assumptions
 - Email is hashed before being sent to public dataset (no raw PII).
 - Rate-limiting considered—only critical events forwarded to Customer.io to control cost.
+- Currency Standardization: All revenue events (e.g., Purchase Completed) track native currency at ingestion, but should be normalized to a standard base currency (e.g., USD) in the data warehouse.
